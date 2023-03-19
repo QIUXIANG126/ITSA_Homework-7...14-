@@ -19,5 +19,5 @@
 # [撲克牌大小](itsa_poker_size.cpp)
 排列英文的部分，在依序找數字後先把字串儲存起來，之後在統一輸出。
 
-#[判斷是否為迴文](itsa_palindrome.cpp)
+# [判斷是否為迴文](itsa_palindrome.cpp)
 設兩變數，從開頭跟結尾同時比對矩陣中的內容。
