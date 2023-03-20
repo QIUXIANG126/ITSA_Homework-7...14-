@@ -25,6 +25,7 @@ int main(){
                 }
             }
         }
+        if(c[c.find_last_of(" ")]==' ')c.erase(c.find_last_of(" "),1);
         ins=c;
         c.clear();
         while(!ins.empty()){
@@ -35,15 +36,16 @@ int main(){
                         if(stoi(ins.substr(ins.find(word[i-1]),2))>9){
                             ins.erase(ins.find(word[i-1])-1,4);
                         }else{
-                        ins.erase(ins.find(word[i-1])-1,3);
+                            ins.erase(ins.find(word[i-1])-1,3);
                         }
-                    if(b[b.find(" ")]==' ')b.erase(b.find(" "),1);
-                    outs+=b+" ";
+                        if(b[b.find(" ")]==' ')b.erase(b.find(" "),1);
+                        outs+=b+" ";
                     }
                 }
             }
         }
     outs.replace(outs.find_last_of(" "),1,"\n");
     }
-    cout <<outs<<endl;
+    if(outs[outs.find_last_of("\n")]=='\n')outs.erase(outs.find_last_of("\n"),2);
+    cout<<outs;
 }
